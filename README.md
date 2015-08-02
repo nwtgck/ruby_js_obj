@@ -33,23 +33,26 @@ user = {
 	}
 }
 
-# Get property
+# Get Property
+
 puts user.id
 #=> 1001
-
-# Get property
 puts user.position.x
 #=> 10.5
 
 # Add property
+
 user.name = "user1"
 puts user.name
 #=> user1
 
-# Add property
 user.position.z = 9.8
 puts user.position.z
 #=> 9.8
+
+# Usual way
+puts user[:id]
+#=> 1001
 ```
 
 ## Development
