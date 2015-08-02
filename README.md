@@ -33,19 +33,21 @@ user = {
 }
 
 # Get
-puts user.id #=> 1001
-puts user.position.x #=> 10.5
+p user.id #=> 1001
+p user.position.x #=> 10.5
 
 # Set
+p user.name #=> "user1"
 user.name = "Jason"
-puts user.name #=> "Jason"
+p user.name #=> "Jason"
 
 # Add
+p defined? user.position.z #=> nil
 user.position.z = 9.8
-puts user.position.z #=> 9.8
+p user.position.z #=> 9.8
 
 # Usual way
-puts user[:id] #=> 1001
+p user[:id] #=> 1001
 
 ```
 
