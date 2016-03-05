@@ -5,7 +5,7 @@ class Hash
 		if name.match(/=$/)
 			self[name[0..-2].intern] = value
 		elsif !name.nil?
-			key?(name) ? self[name] : self[name.to_s]
+			key?(name) ? self[name] : key?(name.to_s) ? self[name.to_s] : nil
 		else
 			super
 		end
